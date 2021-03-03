@@ -22,7 +22,7 @@ public class Main {
 
         public void push(int x) {
             stack.push(x);
-            if (min.size() == 0 || min.peek() > x) {
+            if (min.size() == 0 || min.peek() >= x) {
                 min.push(x);
             }
         }
