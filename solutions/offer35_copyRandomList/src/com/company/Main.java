@@ -21,7 +21,6 @@ public class Main {
         while (node != null) {
             if (node.random != null) node.next.random = node.random.next;
             node = node.next.next;
-
         }
 
         //剥离出克隆出的节点
