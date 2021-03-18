@@ -16,11 +16,12 @@ public class Main {
             node = cloneNode.next;
         }
 
-        //将每个节点的random节点赋值给clone节点
+        //将每个节点的random节点赋值给克隆节点
         node = head;
         while (node != null) {
             if (node.random != null) node.next.random = node.random.next;
             node = node.next.next;
+
         }
 
         //剥离出克隆出的节点
