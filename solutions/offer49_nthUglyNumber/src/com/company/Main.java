@@ -1,6 +1,10 @@
 package com.company;
 
+import com.sun.jmx.remote.internal.ArrayQueue;
+
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class Main {
@@ -41,9 +45,20 @@ public class Main {
         return dp[n-1];
     }
 
+    public <T> void out(List<T> array) {
+        for (T t : array) {
+            System.out.println(t);
+        }
+    }
+
     public static void main(String[] args) {
         Main main = new Main();
         long i = main.nthUglyNumber(14);
         System.out.println(i);
+
+        ArrayList arrayList = new ArrayList();
+        arrayList.add("1");
+        arrayList.add("2");
+        main.out(arrayList);
     }
 }

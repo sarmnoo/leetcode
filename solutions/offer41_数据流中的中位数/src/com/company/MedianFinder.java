@@ -1,9 +1,12 @@
 package com.company;
 
+import com.sun.org.apache.xpath.internal.operations.String;
+
 import javax.print.attribute.standard.Media;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.Scanner;
 
 public class MedianFinder {
     Queue<Integer> a,b;
@@ -46,6 +49,7 @@ public class MedianFinder {
         System.out.println(finder.findMedian());
         finder.addNum(7);
         System.out.println(finder.findMedian());
+        
     }
 }
 

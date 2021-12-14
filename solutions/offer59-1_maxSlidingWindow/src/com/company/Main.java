@@ -33,14 +33,31 @@ public class Main {
         return maxValue;
     }
 
-    public static void main(String[] args) {
-        int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
-        int k = 3;
-        Main m = new Main();
-        int[] ret = m.maxSlidingWindow(nums, k);
-        for (int i : ret) {
-            System.out.println(i);
+    public String reverseWords(String s) {
+        String[] strs = s.split(" ");
+        StringBuilder ret = new StringBuilder();
+        for (int i = strs.length-1; i >= 0; i--) {
+            if (!strs[i].equals("")) {
+                ret.append(strs[i]).append(" ");
+            }
+
+
         }
-        // write your code here
+        String retStr = ret.toString().trim();
+        return retStr;
+    }
+
+    public static void main(String[] args) {
+//        int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
+//        int k = 3;
+//        Main m = new Main();
+//        int[] ret = m.maxSlidingWindow(nums, k);
+//        for (int i : ret) {
+//            System.out.println(i);
+//        }
+
+        Main m = new Main();
+        String s = m.reverseWords("a good   example");
+        System.out.println(s);
     }
 }
